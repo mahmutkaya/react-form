@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card, CardImg } from 'reactstrap';
 
-const renderCountedImages = (imgs, imgCount) => {
+export const renderCountedImages = (imgs, imgCount) => {
   let arr = []
 
   for (let i = 0; i < imgCount; i++) {
@@ -16,7 +16,7 @@ const renderCountedImages = (imgs, imgCount) => {
   )
 }
 
-const renderAllImages = (imgs) => {
+export const renderAllImages = (imgs) => {
   return (
     imgs.map((img, index) => (
       <Card key={index}>
@@ -25,5 +25,3 @@ const renderAllImages = (imgs) => {
     ))
   )
 }
-
-export { renderCountedImages, renderAllImages }
